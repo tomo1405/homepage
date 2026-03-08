@@ -20,11 +20,10 @@ function general_utils() {
 
 function blog_posts() {
 
-    // 以下の3か所にurlを区術する
     // keeping it static, can be fetched from a blog dynamically as well
     let posts = [
         {
-            url: '',
+            url: 'https://tomo1405.github.io',
             title: 'Welcome to My Blog',
         },
     ];
@@ -47,7 +46,7 @@ function blog_posts() {
                 <h3><a href="${post.url}">${post.title}</a></h3>
             </div>
             <div class="blog-goto-link">
-                <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
+                <img class="blog-arrow" src="homepage/assets/images/right-open-mini.svg"/>
             </div>
         </div>
         `;
@@ -62,7 +61,7 @@ function blog_posts() {
             <h3><a href="">Visit the blog for more posts</a></h3>
         </div>
         <div class="blog-goto-link">
-            <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
+            <img class="blog-arrow" src="homepage/assets/images/right-open-mini.svg"/>
         </div>
     </div>
     `;
