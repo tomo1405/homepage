@@ -1,0 +1,23 @@
+title: 渡部 智裕
+description: 渡部智裕の個人ホームページです．
+site_title: 'Tomohiro Watanabe'
+
+# Build settings
+markdown: kramdown
+exclude: [vendor/ruby]
+
+# Personalization
+github_username: tomo1405
+url: tomo1405.github.io
+baseurl: /blog
+blog_url: https://tomo1405.github.io
+email: j520500y@gmail.com
+keybase_username: 
+twitter_username: 
+reddit_username: 
+
+# absolute or relative
+profile_picture: assets/images/me.jpg
+
+# Google Analytics ID
+google_analytics: 

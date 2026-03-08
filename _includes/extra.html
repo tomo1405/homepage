@@ -1,0 +1,31 @@
+<div class="section-wrapper">
+    <section class="section extra" id="extra">
+        <div>
+            <div class="section-heading" id="chat-text">Contact</div>
+            <p class="paragraph-text justify-text">
+                何かございましたら，お気軽に <a href="#" onclick="copyToClipboard('{{ site.email }}'); return false;">{{ site.email }}</a> までご連絡ください.
+            </p>
+            <div class="extra-links">
+                <span class="hint--bottom bottom-link" aria-label="Email">
+                    <a href="#" onclick="copyToClipboard('{{ site.email }}'); return false;"><i class="head-icon fas fa-envelope"></i></a>
+                </span>
+                <span class="hint--bottom bottom-link" aria-label="GitHub">
+                    <a href="https://github.com/{{ site.github_username }}" target="top"><i class="head-icon fab fa-github"></i></a>
+                </span>
+                <span class="hint--bottom bottom-link" aria-label="Daily Blog">
+                    <a href="{{ site.blog_url }}" target="top"><i class="head-icon fas fa-book"></i></a>
+                </span>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+            alert('メールアドレスをコピーしました: ' + text);
+        }).catch(err => {
+            console.error('コピーに失敗しました．', err);
+        });
+    }
+</script>
