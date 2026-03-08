@@ -8,8 +8,8 @@ exclude: [vendor/ruby]
 
 # Personalization
 github_username: tomo1405
-url: tomo1405.github.io
-baseurl: "/homepage"
+# url: tomo1405.github.io
+# baseurl: "/homepage"
 blog_url: https://tomo1405.github.io
 email: j520500y@gmail.com
 keybase_username: 
