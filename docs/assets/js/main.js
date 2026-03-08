@@ -47,7 +47,7 @@ function blog_posts() {
                 <h3><a href="${post.url}/posts/welcome">${post.title}</a></h3>
             </div>
             <div class="blog-goto-link">
-                <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
+                <img class="blog-arrow" src="../assets/images/right-open-mini.svg"/>
             </div>
         </div>
         `;
@@ -59,10 +59,10 @@ function blog_posts() {
     let post_template = `
     <div class="blog-post more-blogs" onclick="blog_link_click('');">
         <div class="blog-link">
-            <h3><a href="">Visit the blog for more posts</a></h3>
+            <h3><a href="${post.url}">Visit the blog for more posts</a></h3>
         </div>
         <div class="blog-goto-link">
-            <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
+            <img class="blog-arrow" src="../assets/images/right-open-mini.svg"/>
         </div>
     </div>
     `;
