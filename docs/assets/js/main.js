@@ -59,7 +59,7 @@ function blog_posts() {
     let post_template = `
     <div class="blog-post more-blogs" onclick="blog_link_click('');">
         <div class="blog-link">
-            <h3><a href="${post.url}">Visit the blog for more posts</a></h3>
+            <h3><a href="https://tomo1405.github.io">Visit the blog for more posts</a></h3>
         </div>
         <div class="blog-goto-link">
             <img class="blog-arrow" src="../assets/images/right-open-mini.svg"/>
