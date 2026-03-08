@@ -32,21 +32,22 @@ function blog_posts() {
 
     for(let post of posts) {
 
-        // let tags;
+        let tags;
         
-        // if(post.tags) {
-        //     tags = post.tags.map(tag => {
-        //         return `<a href="https://www.nagekar.com/tags#${tag}">${tag}</a>`
-        //     })
-        // }
+        if(post.tags) {
+            tags = post.tags.map(tag => {
+                return `<a href="https://tomo1405.github.com/tags#${tag}">${tag}</a>`
+            })
+        }
 
         let post_template = `
         <div class="blog-post" onclick="blog_link_click('${post.url}');">
             <div class="blog-link">
-                <h3><a href="${post.url}">${post.title}</a></h3>
+                <!-- <h3><a href="${post.url}">${post.title}</a></h3> -->
+                <h3><a href="${post.url}/posts/welcome">${post.title}</a></h3>
             </div>
             <div class="blog-goto-link">
-                <img class="blog-arrow" src="homepage/assets/images/right-open-mini.svg"/>
+                <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
             </div>
         </div>
         `;
@@ -61,7 +62,7 @@ function blog_posts() {
             <h3><a href="">Visit the blog for more posts</a></h3>
         </div>
         <div class="blog-goto-link">
-            <img class="blog-arrow" src="homepage/assets/images/right-open-mini.svg"/>
+            <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
         </div>
     </div>
     `;
