@@ -41,7 +41,7 @@ function blog_posts() {
         }
 
         let post_template = `
-        <div class="blog-post" onclick="blog_link_click('${post.url}');">
+        <div class="blog-post" onclick="blog_link_click('${post.url}/posts/welcome');">
             <div class="blog-link">
                 <!-- <h3><a href="${post.url}">${post.title}</a></h3> -->
                 <h3><a href="${post.url}/posts/welcome">${post.title}</a></h3>
@@ -59,7 +59,7 @@ function blog_posts() {
 
     // for the more posts link
     let post_template = `
-    <div class="blog-post more-blogs" onclick="blog_link_click('');">
+    <div class="blog-post more-blogs" onclick="blog_link_click('https://tomo1405.github.io');">
         <div class="blog-link">
             <h3><a href="https://tomo1405.github.io">Visit the blog for more posts</a></h3>
         </div>
