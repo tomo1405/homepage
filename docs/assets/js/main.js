@@ -30,44 +30,49 @@ function blog_posts() {
 
     let post_html = [];
 
-    for(let post of posts) {
+    // for(let post of posts) {
 
-        let tags;
+    //     let tags;
         
-        if(post.tags) {
-            tags = post.tags.map(tag => {
-                return `<a href="https://tomo1405.github.com/tags#${tag}">${tag}</a>`
-            })
-        }
+    //     if(post.tags) {
+    //         tags = post.tags.map(tag => {
+    //             return `<a href="https://tomo1405.github.com/tags#${tag}">${tag}</a>`
+    //         })
+    //     }
 
-        let post_template = `
-        <div class="blog-post" onclick="blog_link_click('${post.url}/posts/welcome');">
-            <div class="blog-link">
-                <!-- <h3><a href="${post.url}">${post.title}</a></h3> -->
-                <h3><a href="${post.url}/posts/welcome">${post.title}</a></h3>
-            </div>
-            <!--
-            <div class="blog-goto-link">
-                <img class="blog-arrow" src="../assets/images/right-open-mini.svg"/>
-            </div>
-            -->
-        </div>
-        `;
+    //     let post_template = `
+    //     <div class="blog-post" onclick="blog_link_click('${post.url}/posts/welcome');">
+    //         <div class="blog-link">
+    //             <!-- <h3><a href="${post.url}">${post.title}</a></h3> -->
+    //             <h3><a href="${post.url}/posts/welcome">${post.title}</a></h3>
+    //         </div>
+    //         <!--
+    //         <div class="blog-goto-link">
+    //             <img class="blog-arrow" src="../assets/images/right-open-mini.svg"/>
+    //         </div>
+    //         -->
+    //     </div>
+    //     `;
 
-        post_html.push(post_template);
-    }
+    //     post_html.push(post_template);
+    // }
 
     // for the more posts link
     let post_template = `
     <div class="blog-post more-blogs" onclick="blog_link_click('https://tomo1405.github.io');">
         <div class="blog-link">
-            <h3><a href="https://tomo1405.github.io">Visit the blog for more posts</a></h3>
+            <h3><a href="https://tomo1405.github.io">日常ブログ</a></h3>
         </div>
         <!--
         <div class="blog-goto-link">
             <img class="blog-arrow" src="../assets/images/right-open-mini.svg"/>
         </div>
         -->
+    </div>
+    <div class="blog-post more-blogs" onclick="blog_link_click('https://tomo1405.github.io/skillog');">
+        <div class="blog-link">
+            <h3><a href="https://tomo1405.github.io/skillog">技術・研究ブログ</a></h3>
+        </div>
     </div>
     `;
 
@@ -78,5 +83,6 @@ function blog_posts() {
 }
 
 function blog_link_click(url) {
-    window.location = url;
+    // window.location = url;
+    window.open(url);
 }
