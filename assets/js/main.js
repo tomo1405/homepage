@@ -83,6 +83,6 @@ function blog_posts() {
 }
 
 function blog_link_click(url) {
-    // window.location = url;
-    window.open(url);
+    window.location = url;
+    // window.open(url);
 }
