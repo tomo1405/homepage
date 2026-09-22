@@ -11,13 +11,19 @@ let render_projects = (slug) => {
 
     let projects_obj = [
         {
+            link: 'https://ses.sigse.jp/2026/',
+            title: '大規模言語モデルを用いたPython単体テスト生成における量子化の影響調査',
+            author: '渡部智裕, 田中英武, 嶋利一真, 阿萬裕久, 松本健一',
+            publisher: 'SES2026',
+            tags: ['一般論文', '口頭発表', 'ソフトウェア工学', 'ソフトウェアテスト', '単体テスト生成'],
+        },
+        {
             link: 'https://moguranosenshi.sakura.ne.jp/publications/ipsj87-arakawa.pdf',
             title: '【学生奨励賞】大規模言語モデルによる観光雑誌の文章校正',
             author: '荒川花蓮, 加勢田健照, 渡部智裕, 眞鍋光汰, 梶原智之, 二宮崇, 後藤功雄',
             publisher: '情報処理学会第87回全国大会, pp.889-890, 2025',
-            technologies: ['Python', 'Streamlit', 'LLM', 'NLP'],
-        }
-        
+            tags: ['Python', 'Streamlit', 'LLM', 'NLP'],
+        },
     ]
 
     let projects = [];
@@ -43,7 +49,7 @@ let project_mapper = project => {
                         <p class="paragraph-text-normal">${project.publisher} </p>
                     </article>
                     <div class="card__meta">
-                        ${project.technologies.map(tech =>
+                        ${project.tags.map(tech =>
                             `<span class="project-technology paragraph-text-normal">${tech}</span>`
                         ).join('')}
                     </div>
