@@ -71,7 +71,7 @@ function blog_posts() {
     </div>
     <div class="blog-post more-blogs" onclick="blog_link_click('https://tomo1405.github.io/skillog');">
         <div class="blog-link">
-            <h3><a href="https://tomo1405.github.io/skillog">技術・研究ブログ（SSGで制作）</a></h3>
+            <h3><a href="https://tomo1405.github.io/skillog">技術・研究ブログ</a></h3>
         </div>
     </div>
     <div class="blog-post more-blogs" onclick="blog_link_click('https://qiita.com/tomohilog');">
